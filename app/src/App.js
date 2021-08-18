@@ -2,6 +2,7 @@ import React from "react";
 // Custom Components
 import Header from "./components/UI/Header";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
   const allExpenses = [
@@ -34,6 +35,7 @@ function App() {
   return (
     <div>
       <Header />
+      <NewExpense />
       <Expenses expenses={allExpenses} />
     </div>
   );
