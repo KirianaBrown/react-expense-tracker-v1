@@ -1,12 +1,13 @@
 import React from "react";
 // Custom Components
-import ExpenseItem from "./components/ExpenseItem";
+import Header from "./components/UI/Header";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
-      <ExpenseItem />
+      <Header />
+      <Expenses />
     </div>
   );
 }
