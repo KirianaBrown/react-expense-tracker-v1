@@ -1,0 +1,66 @@
+.newExpenseForm {
+    padding: 1rem;
+}
+
+.newExpenseGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newExpenseFormGroup {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.form--description {
+    width: 65%;
+}
+
+.form--amount {
+    width: 30%;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: solid 1px white;
+}
+
+.newExpenseForm-actions {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    color: white;
+    box-shadow: none;
+    border: none;
+    width: 10rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-cancel {
+    background-color: red;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-add {
+    background-color: orange;
+}
