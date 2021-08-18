@@ -1,0 +1,10 @@
+.expenseItem {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px hsla(48, 100%, 93%, 0.7);
+    background-color: hsla(48, 100%, 93%, 0.6);
+}
