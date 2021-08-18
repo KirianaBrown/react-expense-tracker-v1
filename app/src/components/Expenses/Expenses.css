@@ -1,0 +1,11 @@
+.expenses {
+    background-color: hsla(48, 100%, 93%, 0.28);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px hsla(48, 100%, 93%, 0.7);
+    padding: 1rem;
+    min-height: 60vh;
+}
+
+.expenses-list {
+    list-style-type: none;
+}
