@@ -6,8 +6,8 @@
 
 body {
     background: linear-gradient( to right, hsl(180, 79%, 66%), hsl(220, 23%, 66%), hsl(280, 79%, 66%), hsl(10, 79%, 66%));
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: hsl(220, 40%, 30%);
     width: 70%;
     margin: 0 auto;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }

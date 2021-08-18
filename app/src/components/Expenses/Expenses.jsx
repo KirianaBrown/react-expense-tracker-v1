@@ -11,25 +11,18 @@ import ExpenseItem from "./ExpenseItem";
 
 import "./Expenses.css";
 
-const Expenses = () => {
+const Expenses = (props) => {
   return (
     <div className="expenses">
       <ul className="expenses-list">
-        <ExpenseItem
-          description={"New Book"}
-          date={"March 28th 2021"}
-          amount="200.00"
-        />
-        <ExpenseItem
-          description={"Computer"}
-          date={"Jun 28th 2021"}
-          amount="2899.00"
-        />
-        <ExpenseItem
-          description={"Water Bottle"}
-          date={"August 28th 2021"}
-          amount="14.00"
-        />
+        {props.expenses.map((expense) => (
+          <ExpenseItem
+            key={expense.id}
+            description={expense.description}
+            date={expense.date}
+            amount={expense.amount}
+          />
+        ))}
       </ul>
     </div>
   );

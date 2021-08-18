@@ -3,3 +3,28 @@
     color: lightgoldenrodyellow;
     padding: 1rem;
 }
+
+.header-icon {
+    padding: 0.5rem;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border: 0.3rem solid white;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.header-heading {
+    letter-spacing: 2px;
+}
+
+.outline {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightgoldenrodyellow;
+    color: transparent;
+}
+
+.header-logo {
+    height: 100%;
+    width: 100%;
+}
