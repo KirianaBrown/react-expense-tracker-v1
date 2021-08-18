@@ -12,6 +12,14 @@ import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 
 const Expenses = (props) => {
+  if (props.expenses.length === 0) {
+    return (
+      <div className="expenses">
+        <h3>No Expenses</h3>
+      </div>
+    );
+  }
+
   return (
     <div className="expenses">
       <ul className="expenses-list">

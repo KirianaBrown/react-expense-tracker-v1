@@ -1,9 +1,6 @@
 .newExpense {
-    background-color: rgb(131, 172, 255);
+    background-color: rgba(131, 172, 255, 0.6);
     border-radius: 15px;
-    box-shadow: 4px 0px 10px hsla(280, 100%, 93%, 0.7);
+    box-shadow: 4px 0px 10px hsla(219, 41%, 47%, 0.2);
     padding: 0.5rem;
-    min-height: 60vh;
-    padding: 0.5rem;
-    min-height: 30vh;
 }

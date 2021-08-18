@@ -10,10 +10,21 @@ import NewExpenseForm from "./NewExpenseForm";
 
 import "./NewExpense.css";
 
-const NewExpense = () => {
+const NewExpense = (props) => {
+  const receiveNewExpense = (expense) => {
+    const newExpense = {
+      ...expense,
+      id: Math.random(),
+    };
+
+    console.log(newExpense);
+
+    props.addExpense(newExpense);
+  };
+
   return (
     <div className="newExpense">
-      <NewExpenseForm />
+      <NewExpenseForm saveNewExpense={receiveNewExpense} />
     </div>
   );
 };
