@@ -12,21 +12,40 @@ const NewExpenseForm = (props) => {
   const [enteredDescription, setEnteredDescription] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
+  const [isDescriptionValid, setIsDescriptionValid] = useState(false);
+  const [isAmountValid, setIsAmountValid] = useState(false);
+  const [isDateValid, setIsDateValid] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(true);
 
   /*
   Change handlers - triggered onChange
   Receive e which provides element value
   */
   const enterDescriptionHandler = (e) => {
-    setEnteredDescription(e.target.value);
+    if (e.target.value.trim().length === 0) {
+      setIsDescriptionValid(false);
+    } else {
+      setEnteredDescription(e.target.value);
+      setIsDescriptionValid(true);
+    }
   };
 
   const enterAmountHandler = (e) => {
-    setEnteredAmount(e.target.value);
+    if (e.target.value.trim().length === 0) {
+      setIsAmountValid(false);
+    } else {
+      setEnteredAmount(e.target.value);
+      setIsAmountValid(true);
+    }
   };
 
   const enterDateHandler = (e) => {
-    setEnteredDate(e.target.value);
+    if (e.target.value.trim().length === 0) {
+      setIsDateValid(false);
+    } else {
+      setEnteredDate(e.target.value);
+      setIsDateValid(true);
+    }
   };
 
   const cancelButtonHandler = () => {
@@ -37,27 +56,38 @@ const NewExpenseForm = (props) => {
     e.preventDefault();
     console.log("the form has been submitted");
 
-    const newExpense = {
-      description: enteredDescription,
-      amount: enteredAmount,
-      date: new Date(enteredDate),
-    };
+    if (!isDescriptionValid && !isAmountValid && !isDateValid) {
+      setIsFormValid(false);
+    } else {
+      setIsFormValid(true);
+      const newExpense = {
+        description: enteredDescription,
+        amount: enteredAmount,
+        date: new Date(enteredDate),
+      };
 
-    // Pass data upto Parent Expense component
-    props.saveNewExpense(newExpense);
+      // Pass data upto Parent Expense component
+      props.saveNewExpense(newExpense);
 
-    // Reset Values
-    setEnteredDescription("");
-    setEnteredAmount("");
-    setEnteredDate("");
+      // Reset Values
+      setEnteredDescription("");
+      setEnteredAmount("");
+      setEnteredDate("");
+    }
   };
 
   return (
     <form className="newExpenseForm" onSubmit={formSubmitHandler}>
+      {!isFormValid && (
+        <h6 className="newExpenseForm-invalid">
+          It looks' like you are missing data
+        </h6>
+      )}
       <div className="newExpenseGroup">
         <div className="newExpenseFormGroup form--description">
           <label>Description</label>
           <input
+            className={isDescriptionValid && "good"}
             type="text"
             onChange={enterDescriptionHandler}
             value={enteredDescription}

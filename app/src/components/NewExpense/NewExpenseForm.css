@@ -30,6 +30,12 @@ input {
     background-color: transparent;
     padding: 0.5rem;
     border: solid 1px white;
+    outline: none;
+    color: #e9ecef;
+}
+
+input:focus {
+    outline: none;
 }
 
 .newExpenseForm-actions {
@@ -54,7 +60,7 @@ input {
 }
 
 .btn-cancel {
-    background-color: red;
+    background-color: hsl(10, 88%, 50%);
 }
 
 .btn:hover {
@@ -62,5 +68,14 @@ input {
 }
 
 .btn-add {
-    background-color: orange;
+    background-color: hsl(39, 88%, 50%);
+}
+
+.newExpenseForm-invalid {
+    text-align: center;
+    color: hsl(50, 85%, 60%);
+}
+
+.good {
+    border: 1px solid hsl(120, 100%, 55%);
 }
