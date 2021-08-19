@@ -4,3 +4,14 @@
     box-shadow: 4px 0px 10px hsla(219, 41%, 47%, 0.2);
     padding: 0.5rem;
 }
+
+.open-btn {
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn-open {
+    margin-bottom: 0.5rem;
+    background-color: hsl(280, 79%, 66%);
+}

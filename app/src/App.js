@@ -34,7 +34,7 @@ const DUMMY_EXPENSES = [
 console.log(DUMMY_EXPENSES);
 
 function App() {
-  const [allExpenses, setExpenses] = useState([]);
+  const [allExpenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   const addNewExpense = (expense) => {
     setExpenses((prevState) => {
@@ -42,11 +42,17 @@ function App() {
     });
   };
 
+  const deleteExpense = (key) => {
+    setExpenses((prevState) => {
+      return prevState.filter((el) => el.id.toString() !== key);
+    });
+  };
+
   return (
     <div>
       <Header />
       <NewExpense addExpense={addNewExpense} />
-      <Expenses expenses={allExpenses} />
+      <Expenses expenses={allExpenses} deleteExpense={deleteExpense} />
     </div>
   );
 }

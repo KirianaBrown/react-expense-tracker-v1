@@ -20,15 +20,21 @@ const Expenses = (props) => {
     );
   }
 
+  const getItemToBeDeleted = (key) => {
+    props.deleteExpense(key);
+  };
+
   return (
     <div className="expenses">
       <ul className="expenses-list">
         {props.expenses.map((expense) => (
           <ExpenseItem
             key={expense.id}
+            id={expense.id}
             description={expense.description}
             date={expense.date}
             amount={expense.amount}
+            deleteKey={getItemToBeDeleted}
           />
         ))}
       </ul>

@@ -29,6 +29,10 @@ const NewExpenseForm = (props) => {
     setEnteredDate(e.target.value);
   };
 
+  const cancelButtonHandler = () => {
+    props.cancelForm();
+  };
+
   const formSubmitHandler = (e) => {
     e.preventDefault();
     console.log("the form has been submitted");
@@ -74,7 +78,11 @@ const NewExpenseForm = (props) => {
           <input type="date" onChange={enterDateHandler} value={enteredDate} />
         </div>
         <div className="newExpenseForm-actions">
-          <button className="btn-cancel btn" type="button">
+          <button
+            className="btn-cancel btn"
+            type="button"
+            onClick={cancelButtonHandler}
+          >
             Cancel
           </button>
           <button className="btn-add btn" type="submit">
