@@ -96,6 +96,7 @@ const NewExpenseForm = (props) => {
         <div className="newExpenseFormGroup form--amount">
           <label>Amount</label>
           <input
+            className={isAmountValid && "good"}
             type="number"
             onChange={enterAmountHandler}
             value={enteredAmount}
@@ -105,7 +106,12 @@ const NewExpenseForm = (props) => {
       <div className="newExpenseGroup">
         <div className="newExpenseFormGroup form--amount">
           <label>Date</label>
-          <input type="date" onChange={enterDateHandler} value={enteredDate} />
+          <input
+            className={isDateValid && "good"}
+            type="date"
+            onChange={enterDateHandler}
+            value={enteredDate}
+          />
         </div>
         <div className="newExpenseForm-actions">
           <button

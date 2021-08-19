@@ -21,8 +21,10 @@ const ExpenseItem = (props) => {
         <ExpenseDate date={props.date} />
         <h3 className="expenseItem-description">{props.description}</h3>
       </div>
-      <h4 className="expenseItem-amount">${props.amount}</h4>
-      <ExpenseDelete getExpenseKeyToDelete={getExpenseKeyToDelete} />
+      <div className="expenseItem--inner">
+        <h4 className="expenseItem-amount">${props.amount}</h4>
+        <ExpenseDelete getExpenseKeyToDelete={getExpenseKeyToDelete} />
+      </div>
     </li>
   );
 };

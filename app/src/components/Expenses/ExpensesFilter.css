@@ -1,0 +1,21 @@
+.expensesFilter {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: end;
+}
+
+.expensesFilterSelect {
+    padding: 0.5rem 2rem;
+    background-color: hsl(330, 80%, 71%);
+    margin-right: 1rem;
+    border-radius: 15px;
+    outline: none;
+    color: #e9ecef;
+    border: 1px solid #e9ec;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px hsl(300, 60%, 71%);
+}
+
+.expensesFitlerSelect:focus {
+    outline: none;
+}

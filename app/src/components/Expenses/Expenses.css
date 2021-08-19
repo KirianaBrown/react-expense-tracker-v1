@@ -13,3 +13,8 @@
     list-style-type: none;
     width: 90%;
 }
+
+.no-expenses {
+    text-align: center;
+    color: hsla(48, 100%, 93%, 0.7);
+}
