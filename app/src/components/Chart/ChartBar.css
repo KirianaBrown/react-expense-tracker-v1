@@ -7,18 +7,20 @@
 .chartBar {
     width: 18px;
     height: 120px;
-    border: 1px solid #e9ecef;
+    border: 1px solid hsl(280, 40%, 80%);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 1rem 1rem 0.25rem 1rem;
     display: flex;
     flex-direction: column-reverse;
     overflow: hidden;
+    box-shadow: 5px 0px 10px hsl(280, 80%, 80%);
 }
 
 .chartBar--fill {
     height: 100%;
-    background-color: orange;
+    background-color: hsl(310, 100%, 80%);
+    opacity: 0.7;
 }
 
 .chartBarLabel {
