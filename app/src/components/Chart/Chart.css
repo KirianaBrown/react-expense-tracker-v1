@@ -1,0 +1,6 @@
+.chart {
+    width: 80%;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-evenly;
+}

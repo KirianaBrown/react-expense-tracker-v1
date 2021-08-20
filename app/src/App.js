@@ -15,19 +15,19 @@ const DUMMY_EXPENSES = [
     id: Math.random(),
     description: "Computer Keyboard",
     date: new Date(2020, 10, 22),
-    amount: "45.00",
+    amount: "145.00",
   },
   {
     id: Math.random(),
     description: "Water Bottle",
     date: new Date(2019, 2, 1),
-    amount: "1.50",
+    amount: "500.50",
   },
   {
     id: Math.random(),
     description: "Record",
     date: new Date(2020, 1, 17),
-    amount: "25.99",
+    amount: "125.99",
   },
 ];
 
@@ -41,6 +41,8 @@ function App() {
       return [...prevState, expense];
     });
   };
+
+  console.log(allExpenses);
 
   const deleteExpense = (key) => {
     setExpenses((prevState) => {
