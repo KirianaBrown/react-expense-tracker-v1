@@ -12,3 +12,116 @@ body {
     margin: 0 auto;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+@media only screen and (max-width: 900px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .chartBar {
+        width: 10px;
+        margin: 0.75rem 0.55rem 0.25rem 0.75rem;
+        height: 80px;
+    }
+    .chart {
+        width: auto;
+        margin-top: 2rem;
+    }
+    .expenseItem {
+        font-size: 0.8rem;
+        margin: 1rem;
+        padding: 0.25rem;
+    }
+    .expenses-list {
+        margin-top: 2rem;
+    }
+    .expenseDate {
+        padding: 0.5rem 1rem;
+    }
+    .expenseItem-description {
+        font-size: 0.8rem;
+    }
+    .expenses {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .btn {
+        font-size: 0.6rem;
+    }
+    .btn-delete-item {
+        margin: 0rem 1rem;
+    }
+    .newExpenseGroup {
+        flex-direction: column;
+        width: 100%;
+    }
+    .newExpenseForm-actions {
+        width: 100%;
+        margin-left: 1rem;
+    }
+    .form--amount {
+        width: 80%;
+    }
+    .form--description {
+        width: 80%;
+    }
+    .expenses-list {
+        width: 100%;
+    }
+    .chartBar {
+        width: 10px;
+        margin: 0.6rem 0.25rem 0.25rem 0.5rem;
+        height: 60px;
+    }
+    .chart {
+        width: auto;
+        margin-top: 2rem;
+    }
+    .chartBarLabel {
+        transform: rotate(-45deg);
+    }
+    .expenseItem {
+        font-size: 0.5rem;
+    }
+    .header-heading {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    body {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .header {
+        padding: 0.25rem;
+    }
+    .newExpenseForm {
+        padding: 0rem;
+    }
+    .newExpenseForm-actions {
+        width: 100%;
+        margin-left: 0.5rem;
+    }
+    .btn {
+        height: 2rem;
+    }
+    .expenseItem {
+        width: 100%;
+        margin: 0.5rem 0rem;
+    }
+    .expensesFilterSelect {
+        margin-right: 0rem;
+        padding: 0.5rem 1rem;
+    }
+    .expenseItem-amount {
+        margin-right: 0.25rem;
+    }
+    .expenseItem-description {
+        font-size: 12px;
+    }
+}

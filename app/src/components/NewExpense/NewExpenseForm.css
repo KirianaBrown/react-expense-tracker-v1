@@ -4,6 +4,7 @@
 
 .newExpenseGroup {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     color: hsla(219, 65%, 70%);
 }
@@ -61,7 +62,7 @@ input:focus {
 }
 
 .btn-cancel {
-    background-color: hsl(0, 65%, 35%);
+    background-color: hsl(0, 83%, 54%);
 }
 
 .btn:hover {

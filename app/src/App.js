@@ -5,6 +5,8 @@ import Footer from "./components/UI/Footer";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
+import "./index.css";
+
 const DUMMY_EXPENSES = [
   {
     id: Math.random(),
@@ -52,7 +54,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <Header />
       <NewExpense addExpense={addNewExpense} />{" "}
       <Expenses expenses={allExpenses} deleteExpense={deleteExpense} />{" "}
