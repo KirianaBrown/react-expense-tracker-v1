@@ -6,7 +6,8 @@
     align-items: center;
     border-radius: 15px;
     color: hsl(210, 16%, 83%);
-    background-color: hsl(219, 65%, 65%);
+    /* background-color: hsl(219, 65%, 65%); */
+    background: linear-gradient( to right, hsl(219, 65%, 58%), hsl(219, 65%, 65%), hsl(219, 65%, 58%));
 }
 
 .expenseItem--inner {

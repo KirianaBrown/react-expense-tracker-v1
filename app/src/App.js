@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // Custom Components
 import Header from "./components/UI/Header";
+import Footer from "./components/UI/Footer";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
@@ -53,8 +54,9 @@ function App() {
   return (
     <div>
       <Header />
-      <NewExpense addExpense={addNewExpense} />
-      <Expenses expenses={allExpenses} deleteExpense={deleteExpense} />
+      <NewExpense addExpense={addNewExpense} />{" "}
+      <Expenses expenses={allExpenses} deleteExpense={deleteExpense} />{" "}
+      <Footer />
     </div>
   );
 }
