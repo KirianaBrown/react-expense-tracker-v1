@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="#" target="__blank"><img src="/app/build/img/favicon.png" alt="Money Expense Tracker" width="200"></a>
+  <a href="#" target="__blank"><img src="/app/public/img/favicon.png" alt="Money Expense Tracker" width="200"></a>
   <br>
   <a href="#" target="__blank">React Expense Tracker</a>
   <br>
