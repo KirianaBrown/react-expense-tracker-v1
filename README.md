@@ -4,9 +4,8 @@
   <br>
   <a href="#" target="__blank">React Expense Tracker</a>
   <br>
+  <p>🚀 Keep a track of your expenses with this handy little app.</p>
 </h1>
-
-###### 🚀 Keep a track of your expenses with this handy little app.
 
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -24,7 +23,7 @@
 
 ## 🥎 Summary
 
-<img align='center' src="/dist/img/readme1.png" alt="Weather | Suns out Buns Out">
+<img align='center' src="/app/public/img/README.png" alt="Expense Tracker">
 
 Handy little React App to handle and mange your expenses. Featuring a built in chart to showcase your spending month by month across a whole year so you can work out where you can save.
 
