@@ -29,6 +29,12 @@
 
 Handy little React App to handle and mange your expenses. Featuring a built in chart to showcase your spending month by month across a whole year so you can work out where you can save.
 
+This app is the first of many to come in my journey of learning React and React Hooks - it is simple and helps strengthen fundamentals such as components, nesting, props, useState(). 
+
+Developments to come:
+- implementing styled.components
+- using local storage to persist data
+
 Project inspiration provided by Maximilian Schwartzmuller <a href="https://academind.com">: Academind</a>
 
 ## 🚀 You can clone the repository and use the following commands:
