@@ -1,12 +1,12 @@
 <h1 align="center">
   <br>
-  <a href="#" target="__blank"><img src="#" alt="Money Expense Tracker" width="200"></a>
+  <a href="#" target="__blank"><img src="./app/build/img/favicon.png" alt="Money Expense Tracker" width="200"></a>
   <br>
-  <a href="#" target="__blank">Keep a track of your expenses with this handy little app</a>
+  <a href="#" target="__blank"> 🚀 React Expense Tracker</a>
   <br>
 </h1>
 
-###### 🚀 React Expense Tracker.
+###### Keep a track of your expenses with this handy little app.
 
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
