@@ -1,5 +1,4 @@
 import "./ExpenseDelete.css";
-import deleteIcon from "../../img/icon-delete.svg";
 
 const ExpenseDelete = (props) => {
   const clickDeleteExpenseHandler = (e) => {
@@ -10,7 +9,7 @@ const ExpenseDelete = (props) => {
 
   return (
     <div type="delete" onClick={clickDeleteExpenseHandler}>
-      <img src={deleteIcon} alt="delete" className="btn" />
+      <div className="btn-delete-item">x</div>
     </div>
   );
 };

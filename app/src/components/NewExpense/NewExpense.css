@@ -1,7 +1,5 @@
 .newExpense {
-    background-color: rgba(131, 172, 255, 0.6);
-    border-radius: 15px;
-    box-shadow: 4px 0px 10px hsla(219, 41%, 47%, 0.2);
+    border-radius: 10px;
     padding: 0.5rem;
 }
 
@@ -13,5 +11,5 @@
 
 .btn-open {
     margin-bottom: 0.5rem;
-    background-color: hsl(280, 79%, 66%);
+    background-color: hsl(219, 65%, 75%);
 }

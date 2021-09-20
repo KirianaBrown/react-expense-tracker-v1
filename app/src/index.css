@@ -5,8 +5,9 @@
 }
 
 body {
-    background: linear-gradient( to right, hsl(180, 79%, 66%), hsl(220, 23%, 66%), hsl(280, 79%, 66%), hsl(10, 79%, 66%));
-    color: hsl(220, 40%, 30%);
+    /* background-color: #0e2041; */
+    background: linear-gradient( to right, hsl(219, 65%, 55%), hsl(219, 65%, 35%), hsl(219, 65%, 25%));
+    color: hsl(220, 25%, 34%);
     width: 70%;
     margin: 0 auto;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
