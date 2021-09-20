@@ -1,11 +1,13 @@
 <h1 align="center">
   <br>
-  <a href="#" target="__blank"><img src="/app/public/img/favicon.png" alt="Money Expense Tracker" width="200"></a>
+  <a href="https://track-those-expenses.netlify.app/" target="__blank"><img src="/app/public/img/favicon.png" alt="Money Expense Tracker" width="200"></a>
   <br>
-  <a href="#" target="__blank">React Expense Tracker</a>
+  <a href="https://track-those-expenses.netlify.app/" target="__blank">React Expense Tracker</a>
   <br>
   <p>🚀 Keep a track of your expenses with this handy little app.</p>
 </h1>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/03fce3ab-7ae4-4737-ad8a-9216d1e43787/deploy-status)](https://app.netlify.com/sites/track-those-expenses/deploys)
 
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
